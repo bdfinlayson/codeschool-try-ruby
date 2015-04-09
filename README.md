@@ -73,4 +73,52 @@ Start building our new method with:
 
 `Popup.goto "http://bing.com"`
 
+### Making Links and Spinning Webs
+*Ruby appears to use markdown syntax in this example for writing to the DOM*
+
+*You can make simple links by defining a new method*
+
+*Codeschool gives this example:*
+
+`Popup.make {`
+  `h1 "My Links"`
+  `link "Go to Bing", "http://bing.com"`
+`}`
+
+*They also give an example of making a list*
+
+*They edit the previous method by adding a list:*
+
+`Popup.make do`
+  `h1 "Things To Do"`
+  `list do`
+    `p "Try out Ruby"`
+    `p "Ride a tiger"`
+    `p "(down River Euphrates)"`
+  `end`
+`end`
+
+The `p` method is short for "paragraph". It will ensure each of your list items gets its own paragraph spot.
+
+### Spread the Comics on the Table
+*In this final stage, Codeschool has you write a method to create an h1 and loop through each comic and list its name and url*
+It's time for the last step. Let's tie it all together, you know? Time to make it all sing together like a very nice set of glistening chimes on the beach in the maginificent sunlight! Yeah, imagery!
+
+Remember: you have already loaded your comics with `comics = load_comics( '/comics.txt' )`.
+
+Now, let's make a list of the links to each comic:
+
+`Popup.make do`
+  `h1 "Comics on the Web"`
+  `list do`
+    `comics.each do |name, url|`
+      `link name, url`
+    `end`
+  `end`
+`end`
+
+This ties each name of a comic to a url, creating a link! You can even click on the links and read the comics in the little window! Smashing! Dashing!
+
+
+
 
