@@ -64,3 +64,13 @@ Start building our new method with:
 
 `strip` -- This quickie removes extra spaces around the url. Just in case.
 
+### Browser Puppetry
+*To load a library, use the `require` method*
+
+*For example, the method `require 'popup'` will load the so-called popup library*
+
+*Codeschool gives the following example of a way to use the new library:*
+
+`Popup.goto "http://bing.com"`
+
+
